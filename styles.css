@@ -1,0 +1,156 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #add8e6; 
+    transition: background-color 0.5s;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+}
+
+.circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+   
+}
+
+
+
+.circle:hover {
+    transform: scale(1.1);
+}
+
+.blue {
+    background-color: #0000ff; 
+}
+
+.yellow {
+    background-color: #ffd700;
+}
+
+.pink {
+    background-color: #ff69b4; 
+}
+
+.text-container{
+    width: 50%;
+}
+.title{
+    width: 100%;
+}
+
+.buttons {
+    display: flex;
+}
+
+#umbrella-image {
+    width: 250px;
+    height: auto;
+}
+
+.upload-container {
+    margin-top: 20px;
+}
+
+#upload-button {
+    background-color: #add8e6; 
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-flex; 
+    justify-content: flex-start;
+    align-items: center; 
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.5s;
+}
+
+#upload-button:hover {
+    background-color: #87ceeb; 
+}
+
+.loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    display: none;
+}
+
+.image-container {
+    margin-top: 20px;
+    height: 100%;
+    width: 50%;
+    position: relative;
+}
+
+.loader.rotate {
+    animation: rotate 2s linear infinite;
+}
+
+.upload-icon {
+    width: 24px; 
+    height: 24px;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(360deg) brightness(100%) contrast(100%);
+    margin-right: 50px; 
+    vertical-align: middle;
+}
+
+.text {
+    margin: 0;
+    margin-bottom: 5px;
+    font-weight: 100;
+    color: rgb(46, 45, 45);
+    font-size: 12px;
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.rotate {
+    animation: rotate 1s linear infinite;
+}
+
+
+.logo-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.uploaded-logo {
+    max-width: 50px;
+    position: absolute;
+    top: -70px;
+    left: 50%; 
+    transform: translateX(-50%); 
+    z-index: 1; 
+}

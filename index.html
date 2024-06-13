@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Selector</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="image-container">
+            <img id="loader" class="loader" src="images/loader_icon.svg" alt="Loader">
+            <img id="umbrella-image" src="images/blue-umbrella.png" alt="Blue Umbrella">
+            <div id="logo-container" class="logo-container">
+                <img id="uploaded-logo" class="uploaded-logo" src="#" alt="">
+            </div>
+        </div>
+        <div class="text-container">
+            <h2 class="title">Custom Umbrella</h2>
+            <div class="buttons">
+                <div class="circle blue" id="blue"></div>
+                <div class="circle yellow" id="yellow"></div>
+                <div class="circle pink" id="pink"></div>
+            </div>
+            <h3>Customize your Umbrella</h3>
+            <p class="text">Upload a logo for an instant Preview.</p>
+            <p class="text">.png and .jpg files only. Max file size is 5MB.</p>
+            <div class="upload-container">
+                <button id="upload-button">
+                    <img class="upload-icon" src="images/upload_icon.svg" alt="Upload Icon">
+                    UPLOAD LOGO
+                </button>
+                <input type="file" id="file-input" accept=".png, .jpg" style="display: none;">
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
